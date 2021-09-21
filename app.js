@@ -1,7 +1,5 @@
 var privacy = document.querySelector(".privacy");
 var dateOfBirth = document.querySelector("#date-of-birth");
-var luckyNumber = document.querySelector("#lucky-number");
-var btnClose = document.getElementById("#close");
 var outputContainer = document.querySelector("#output-container");
 var checkBtn = document.querySelector("#check-btn");
 
@@ -37,6 +35,10 @@ function calculateSum(date){
             showMessage("Please enter both the fields");
           }
         };
+
+        
+
+
     
 
     
