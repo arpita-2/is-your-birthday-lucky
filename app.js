@@ -26,7 +26,19 @@ function calculateSum(date){
     function showMessage(message){
         outputContainer.innerText = message;
     }
+
+    function checkBirthdayIsLucky(){
+        const dob = dateOfBirth.value;
+        const numberToCheck = luckyNumber.value;
+        if (dob && numberToCheck) {
+            const sumOfDate = calculateSum(date);
+            compareValues(sumOfDate, numberToCheck);
+          } else {
+            showMessage("Please enter both the fields");
+          }
+        };
     
+
     
 
     
