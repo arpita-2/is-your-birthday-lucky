@@ -15,6 +15,13 @@ function calculateSum(date){
       }
       return sum;
     };
+
+    function compareValues(sum, luckyNumber){
+        if(sum%luckyNumber===0){
+            return showMessage(`${numberToCheck} is a lucky number!! 🤗🤗🤗 `);
+        }
+        showMessage(`${numberToCheck} is not that lucky 😕`);
+    }
     
 
     
