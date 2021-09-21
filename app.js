@@ -14,7 +14,7 @@ function calculateSum(date){
         sum = sum + Number(digit);
       }
       return sum;
-    };
+    }
 
     function compareValues(sum, luckyNumber){
         if(sum%luckyNumber===0){
@@ -22,6 +22,11 @@ function calculateSum(date){
         }
         showMessage(`${numberToCheck} is not that lucky 😕`);
     }
+
+    function showMessage(message){
+        outputContainer.innerText = message;
+    }
+    
     
 
     
